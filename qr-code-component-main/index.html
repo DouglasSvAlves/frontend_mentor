@@ -23,7 +23,8 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      height: calc(100dvh - 20px); /*dvh é dinamic viwer port é melhor do que vh, pois ele considera as barras que os browsers tem e até no celular também*/
+      min-height: calc(100vh - 20px); /*Esse é para caso o browser não tiver suporte a dvh ele vai usar o vh normal*/
+      min-height: calc(100dvh - 20px); /*dvh é dinamic viwer port é melhor do que vh, pois ele considera as barras que os browsers tem e até no celular também*/
     }
 
     .container-qrcode {
